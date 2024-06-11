@@ -1,0 +1,135 @@
+Assignement-1 : write the network terminologies with example
+
+
+List Of Network Terminologies Are :
+
+IP Address:
+------------
+
+Definition:  An Internet Protocol (IP) address is a unique identifier assigned to each device connected to a network.
+Example:     192.168.1.1 for a home router, or 172.217.14.238 for google.com.
+
+
+DNS (Domain Name System):
+--------------------------
+
+Definition:  DNS translates human-friendly domain names to IP addresses.
+Example:     www.example.com resolves to 93.184.216.34.
+
+
+MAC Address:
+------------
+Definition:  A Media Access Control (MAC) address is a hardware identifier for network interfaces.
+Example:     00:1A:2B:3C:4D:5E for a network interface card.
+
+
+Subnet Mask:
+------------
+
+Definition:  A subnet mask divides an IP address into the network and host portions.
+Example:    255.255.255.0 is a common subnet mask for a small network.
+
+LAN (Local Area Network):
+------------------------
+
+Definition:  A LAN is a network that spans a small geographical area, such as a home or office.
+Example:     The network within a home that connects computers, printers, and other devices.
+
+WAN (Wide Area Network):
+------------------------
+
+Definition:  A WAN spans a large geographical area, connecting multiple LANs.
+
+Example:    The Internet is the largest WAN.
+
+
+Router:
+------------
+
+Definition:  A router directs data packets between networks.
+Example:     A home router connects a local network to the Internet
+
+
+Switch:
+------------
+
+Definition:  A switch connects devices within a single network, using MAC addresses to forward data to the correct device.
+Example:     A network switch in an office connecting multiple computers and printers.
+
+Firewall:
+------------
+
+Definition: A firewall controls incoming and outgoing network traffic based on predetermined security rules.
+Example:    A software firewall on a computer, or a hardware firewall device protecting a network.
+
+
+
+VPN (Virtual Private Network):
+------------
+
+Definition:  A VPN creates a secure, encrypted connection over a less secure network, such as the Internet.
+Example:    Employees using a VPN to securely access their company's internal network from home.
+
+
+
+Gateway:
+------------
+
+Definition:  A gateway is a network node that connects two different networks, often used to forward traffic from a local network to external networks.
+Example:     A home router acting as a gateway to the Internet.
+
+Bandwidth:
+------------
+
+Definition:  Bandwidth is the maximum rate of data transfer across a given path.
+Example:  An Internet connection with a bandwidth of 100 Mbps.
+
+
+Topology:
+------------
+
+Definition:  Network topology refers to the arrangement of elements (links, nodes, etc.) in a computer network.
+Example:     A star topology where all devices are connected to a central hub.
+
+
+Protocol:
+------------
+Definition:  A protocol is a set of rules governing the exchange or transmission of data between devices.
+Example:    HTTP (Hypertext Transfer Protocol) used for transmitting web pages.
+Ethernet:
+------------
+
+Definition: Ethernet is a family of networking technologies commonly used in LANs.
+Example:    Connecting a computer to a network using an Ethernet cable.
+
+
+DHCP (Dynamic Host Configuration Protocol):
+------------------------------------------------
+
+Definition:  DHCP automates the assignment of IP addresses and other network settings to devices.
+Example:     A laptop getting an IP address from a router when it connects to a Wi-Fi network.
+
+
+NAT (Network Address Translation):
+------------
+Definition:  NAT modifies network address information in IP packet headers while in transit, allowing multiple devices on a local network to share a single public IP address.
+Example:    A home router using NAT to allow multiple devices to access the Internet through one public IP.
+
+
+Latency:
+------------
+Definition: Latency is the time it takes for data to travel from the source to the destination.
+Example:    A ping time of 20 milliseconds to a local server.
+Wireless Access Point (WAP):
+-----------------------------
+
+Definition: A WAP allows wireless devices to connect to a wired network using Wi-Fi.
+Example:    A Wi-Fi router that provides Internet access to wireless devices.
+
+
+
+Port:
+------------
+Definition:  A port is a virtual point where network connections start and end, associated with a specific process or service.
+Example:     Port 80 for HTTP traffic and port 443 for HTTPS traffic.
+

@@ -1,0 +1,95 @@
+Assignment 2: Draw your Home Network Topology and explain how you are accessing the RPS Lab environment.
+
+ 
+             
+      
+Home Network Topology Diagram:
+
+
+               +----------------+
+               |   Internet     |
+               +--------+-------+
+                        |
+                        |
+               +--------v-------+
+               |    Modem       |
+               +--------+-------+
+                        |
+                        |
+               +--------v-------+
+               |    Router      |
+               +----+----+------+
+                    |    |
+           +--------+    +--------+
+           |                    |
+      +----v----+          +----v----+
+      |  Switch |          |  Wi-Fi  |
+      +----+----+          +----+----+
+           |                    |
+           |                    |
+      +----v----+      +--------+--------+
+      | Desktop |      |   Wireless      |
+      |         |      |   Devices       |
+      +---------+      +--------+--------+
+                                |
+                                |
+                          +-----v------+
+                          |  Laptop    |
+                          +------------+
+
+
+
+
+Explanation of Network Components:
+------------------------------------------
+
+Internet: The connection provided by the Internet Service Provider (ISP).
+
+Modem: Converts the ISP's broadband signal to a digital signal.
+
+Router: Directs traffic between the modem and devices in the home network. It also provides a firewall for security.
+
+Switch: Expands the number of wired connections available on the network.
+
+Wi-Fi Access Point: Provides wireless connectivity for mobile devices, laptops, tablets, etc.
+
+
+
+Devices:
+---------------
+
+          Desktop PC: Connected via Ethernet cable for a stable and fast connection.
+
+           Wireless Devices: Smartphones, tablets, and laptops connected via Wi-Fi.
+
+
+Accessing the RPS Lab Environment:
+-----------------------------------------
+
+Assuming the RPS Lab environment is an external resource accessible over the Internet, the process involves several steps:
+
+Device Connection:
+
+----> Desktop PC: Wired connection through the switch to the router.
+
+----> Laptop: Wireless connection through the Wi-Fi access point to the router.
+
+
+Network Routing:
+
+----> Router: Routes the traffic from the local devices to the Internet. The router uses Network Address Translation (NAT) to allow multiple devices to share the single public IP address provided by the ISP.
+
+
+Internet:
+
+----> The router forwards the traffic through the modem to the Internet.
+
+
+VPN (if used):
+
+----> If a Virtual Private Network (VPN) is required to access the RPS Lab environment securely, the VPN client on the device establishes a secure, encrypted connection to the VPN server in the RPS Lab.
+
+
+RPS Lab Environment:
+
+----> The device sends requests to the RPS Lab servers over the Internet or VPN. The lab's servers process these requests and send responses back to the device through the same path.
