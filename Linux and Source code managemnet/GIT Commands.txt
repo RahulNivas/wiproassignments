@@ -1,6 +1,6 @@
 Assignment-1 : Basic Git Commands
 
-Here are some basic Git commands along with their definitions:
+
 
 	git init
 
