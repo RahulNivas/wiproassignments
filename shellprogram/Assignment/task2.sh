@@ -14,3 +14,10 @@ read -p "enter the number(0 to exit) " num
    echo "$num is odd"
 fi
 done
+
+output:
+
+enter the number(0 to exit) 3
+3 is odd
+enter the number(0 to exit) 0
+
