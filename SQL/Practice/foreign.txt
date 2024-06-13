@@ -1,0 +1,26 @@
+create table dept
+(
+ id number primary key,
+ name varchar2(30) not null,
+ manager varchar2(30)
+);
+desc dept;
+
+insert into dept values(3,'gopi','vijay');
+
+create table empl
+(
+ id number primary key,
+ name varchar2(30) not null,
+ age number(10),
+ salary number(10),
+ deptid number(10),
+ constraint fk1 foreign key(deptid) references dept(id) on delete cascade
+);
+desc empl;
+
+insert into empl values(1,'sekar',24,50000,1);
+insert into empl values(2,'eshwar',21,30000,1);
+select * from empl;
+delete from dept where id=1;
+

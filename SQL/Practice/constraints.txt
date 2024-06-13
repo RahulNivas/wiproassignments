@@ -1,0 +1,27 @@
+create table employee2
+(
+ id number primary key,
+ name varchar2(30) not null,
+ age number(10)
+);
+
+desc employee2;
+insert into employee2 values(3,'glory',21);
+insert into employee2 values(4,'',21);
+select * from employee2;
+
+
+create table emp
+(
+ id number primary key,
+ name varchar2(30) not null,
+ age number(10) check(age>22),
+ dept varchar2(30) default 'trainee',
+ email varchar2(30) unique,
+ contact number(10) unique
+)
+desc emp;
+
+insert into emp values(1,'rahul',23,'hr','rahul2gmail.com',45678);
+insert into emp (id,name,age,email,contact) values(3,'sachin',24,'sachin@xyz.com',567);
+select * from emp;

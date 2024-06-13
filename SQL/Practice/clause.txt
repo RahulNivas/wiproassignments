@@ -1,0 +1,29 @@
+create table employee
+(
+ id number(20),
+ name varchar2(40),
+ salary number(10,2),
+ dept varchar2(40),
+ age number
+)
+
+
+select * from employee;
+insert into employee values(9,'rithish',39000,'designer',20);
+
+select * from employee order by age;
+select * from employee where age>30;
+select id,name,salary,age from employee order by age desc;
+
+select salary,max(salary) from employee group by salary;
+select sum(salary) from employee group by salary;
+select dept from employee group by dept;
+select dept,count(id) from employee group by dept;
+
+select dept, count(id), sum(salary), max(salary), min(salary), avg(salary) from employee group by dept;
+select dept, count(id), sum(salary) from employee group by dept;
+
+select dept, count(id) from employee group by dept order by count(id) desc; 
+select dept, min(salary) from employee group by dept having min(salary) < 40000 order by min(salary);
+
+describe employee;
