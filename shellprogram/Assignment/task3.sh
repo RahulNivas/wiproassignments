@@ -15,3 +15,11 @@ count()
 }
 count "variable.sh"
 count "largest.sh"
+
+Output
+file exist
+Number of lines present in largest.sh file is 16
+Number of Words present in largest.sh  file is 37
+file exist
+Number of lines present in variable.sh file is 17
+Number of Words present in variable.sh  file is 48
