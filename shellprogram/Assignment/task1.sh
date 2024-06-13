@@ -10,6 +10,8 @@ then
   echo "file not found"
 fi
 }
-
 func
 
+#output
+#enter the filename largest.sh
+#file exist.
