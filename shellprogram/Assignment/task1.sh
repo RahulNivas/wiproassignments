@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 func()
 {
 read -p "enter the filename " filename
