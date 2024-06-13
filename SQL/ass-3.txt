@@ -1,0 +1,23 @@
+create table customers
+(
+ id number(10) primary key,
+ name varchar2(30) not null,
+ age number check(age>18),
+ email varchar2(30) unique,
+ city varchar2(30),
+ phone number(10)
+);
+
+insert into customers values(1,'rahul',23,'rahul@gmail.com','chennai',234567889);
+insert into customers values(2,'shilpa',22,'shilpa@gmail.com','chennai',45678945);
+insert into customers values(3,'sachin',21,'sachin@gmail.com','andhra',2984579);
+insert into customers values(4,'nivas',30,'nivas@gmail.com','bengaluru',882787889);
+insert into customers values(5,'prem',19,'prem@gmail.com','vizag',5678765);
+insert into customers values(6,'sheela',20,'sheeel@gmail.com','chennai',1234554);
+insert into customers values(7,'seshu',43,'seshu@gmail.com','kochi',9876567);
+insert into customers values(8,'sakshi',28,'shakshi@gmail.com','kerala',234567898);
+insert into customers values(9,'josh',23,'josh@gmail.com','delhi',45678765);
+insert into customers values(10,'askar',19,'askar@gmail.com','mumbai',34567679);
+
+select * from customers;
+select name,email from customers where city='chennai';

@@ -1,0 +1,111 @@
+
+
+ Business Scenario:
+
+    Consider a simple e-commerce platform where customers can place orders for products. The platform has the following requirements:
+
+ 1. Customers: Each customer has a unique ID, name, email, and phone number.
+
+ 2.Products: Each product has a unique ID, name, description, and price.
+
+ 3.Orders: Each order has a unique order ID, an order date, and a status.
+
+ 4.Order Details: Each order can include multiple products. The quantity and the total price for each product in the order are recorded.
+
+ 5.Shipping: Each order has a shipping address that includes an address ID, street, city, state, and postal code.
+
+
+ Entities and Attributes
+
+ Based on the scenario, the following entities and attributes are identified:
+
+ 1. Customer
+
+    CustomerID (Primary Key)
+    Name
+    Email
+    PhoneNumber
+    Product
+
+ 2. ProductID (Primary Key)
+    Name
+    Description
+    Price
+    Order
+
+ 3. OrderID (Primary Key)
+    OrderDate
+    Status
+    CustomerID (Foreign Key)
+    OrderDetail
+
+ 4. OrderID (Composite Key, Foreign Key)
+    ProductID (Composite Key, Foreign Key)
+    Quantity
+    TotalPrice
+    ShippingAddress
+
+ 5. AddressID (Primary Key)
+    Street
+    City
+    State
+    PostalCode
+    OrderID (Foreign Key)
+    
+  Relationships
+     
+      * A Customer can place multiple Orders.
+      * An Order is associated with one Customer.
+      * An Order can include multiple Products through OrderDetails.
+      * A Product can be part of multiple OrderDetails.
+      * An Order has one ShippingAddress.
+
+ ER Diagram
+
+   Let's create the ER diagram:
+
+         Entities and Relationships
+         Customer (1) ---- (M) Order
+         One customer can place many orders.
+         Order (1) ---- (M) OrderDetail
+         One order can have many order details (each for different products).
+         Product (1) ---- (M) OrderDetail
+         One product can appear in many order details.
+         Order (1) ---- (1) ShippingAddress
+         One order has one shipping address.
+
+
+                                             
+              +------------------+        +------------------+        +--------------------+
+              |    Customer      |        |      Order       |        |   ShippingAddress  |
+              +------------------+        +------------------+        +--------------------+
+              | CustomerID (PK)  |        | OrderID (PK)     |        | AddressID (PK)     |
+              | Name             |        | OrderDate        |        | Street             |
+              | Email            |<-------| Status           |        | City               |
+              | PhoneNumber      |        | CustomerID (FK)  |        | State              |
+              +------------------+        +------------------+        | PostalCode         |
+                                                  |                   | OrderID (FK)       |
+                                                  |                   +--------------------+
+                                                  | M
+                                                  |
+                                                  | 1
+                                          +------------------+
+                                          |    OrderDetail   |
+                                          +------------------+
+                                          | OrderID (PK, FK) |
+                                          | ProductID (PK,fK)|
+                                          | Quantity         |
+                                          | TotalPrice       |
+                                          +------------------+                                      |
+                                                  |                                 
+                                                  | M
+                                                  |
+                                                  | 1
+          +------------------+        +------------------+
+          |     Product      |        |      Order       |
+          +------------------+        +------------------+
+          | ProductID (PK)   |        | OrderID (PK)     |
+          | Name             |<-------| OrderDate        |
+          | Description      |        | Status           |
+          | Price            |        | CustomerID (FK)  |
+          +------------------+        +------------------+

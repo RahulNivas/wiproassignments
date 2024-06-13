@@ -1,0 +1,23 @@
+create table book
+(
+ book_id number primary key,
+ title varchar2(30) not null,
+ published_year number(30),
+ author_id number(10),
+ foreign key (author_id) references authors(author_id)
+);
+
+create table authors
+(
+ author_id number primary key,
+ author_name varchar2(30) not null
+);
+
+create table borrower
+(
+ borrower_id number primary key,
+ borrower_name varchar2(30) not null,
+ borrower_address varchar2(30),
+ phone_number number,
+ age number check(age>18)
+);
